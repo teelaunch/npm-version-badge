@@ -2,6 +2,8 @@
 
 Want to add a simple **SVG** badge that gets updated real-time as you increment your project's version in `package.json`?
 
+(note that SVG images do not pixellate when rendered on mobile devices nor when zoomed in)
+
 ```markdown
 # Example <sup>[![Version Badge](http://vb.teelaun.ch/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].svg)](https://npmjs.org/package/[YOUR_PACKAGE_NAME])</sup>
 ```
