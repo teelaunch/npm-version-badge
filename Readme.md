@@ -7,7 +7,7 @@ Want to add a simple **SVG** badge that gets updated real-time as you increment 
 ```
 
 
-## Example <sup>[![Version Badge](http://vb.teelaun.ch/niftylettuce/node-email-templates.svg)](https://npmjs.org/package/email-template)</sup>
+## Example <sup>[![Version Badge](http://vb.teelaun.ch/niftylettuce/node-email-templates.svg)](https://npmjs.org/package/email-templates)</sup>
 
 
 ## PNG Badge
