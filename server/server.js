@@ -16,7 +16,12 @@ if (cluster.isMaster) {
   var express = require('express')
     , app     = express()
   app.get('/:user/:repo.svg', getBadge)
+  app.get('*', redirect)
   app.listen(3400)
+}
+
+function redirect(req, res) {
+  res.redirect('https://github.com/teelaunch/npm-version-badge#npm-version-badge')
 }
 
 function getBadge(req, res, next) {
