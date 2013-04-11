@@ -1,4 +1,3 @@
-
 // # npm-version-badge
 
 var request = require('request')
@@ -37,6 +36,7 @@ function getBadge(req, res, next) {
     if (typeof body.version !== 'string' || body.version === '')
       return next(new Error('version not found in package.json'))
     res.type('svg')
+    res.set('Cache-Control', 'no-cache');
     res.send('<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="10"><text y="9" font-size="12" fill="#2d2d2d" font-family="Arial">v' + body.version + '</text></svg>')
   })
 }
