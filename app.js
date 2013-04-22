@@ -1,23 +1,12 @@
 // # npm-version-badge
 
 var request = require('request')
-  , cluster = require('cluster')
-  , numCPUs = require('os').cpus().length
 
-if (cluster.isMaster) {
-  for (var i = 0; i < numCPUs; i++) {
-    cluster.fork()
-  }
-  cluster.on('exit', function(worker, code, signal) {
-    console.log('worker %d died', worker.process.pid);
-  })
-} else {
-  var express = require('express')
-    , app     = express()
-  app.get('/:user/:repo.svg', getBadge)
-  app.get('*', redirect)
-  app.listen(3400)
-}
+var express = require('express')
+  , app     = express()
+app.get('/:user/:repo.svg', getBadge)
+app.get('*', redirect)
+app.listen(8083)
 
 function redirect(req, res) {
   res.redirect('https://github.com/teelaunch/npm-version-badge#npm-version-badge')
