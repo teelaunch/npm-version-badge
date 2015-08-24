@@ -5,11 +5,11 @@ Want to add a simple **SVG** badge that gets updated real-time as you increment 
 **NOTE**: Unlike raster images (PNG/GIF/JPG), SVG images do not pixellate when rendered on mobile devices, zoomed in, or on retina displays.
 
 ```markdown
-# Example <sup>[![Version Badge](http://vb.teelaun.ch/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].svg)](https://npmjs.org/package/[YOUR_PACKAGE_NAME])</sup>
+# Example <sup>[![Version Badge](http://versionbadg.es//[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].svg)](https://npmjs.org/package/[YOUR_PACKAGE_NAME])</sup>
 ```
 
 
-## Example <sup>[![Version Badge](http://vb.teelaun.ch/niftylettuce/node-email-templates.svg)](https://npmjs.org/package/email-templates)</sup>
+## Example <sup>[![Version Badge](http://versionbadg.es/niftylettuce/node-email-templates.svg)](https://npmjs.org/package/email-templates)</sup>
 
 
 ## PNG Badge
